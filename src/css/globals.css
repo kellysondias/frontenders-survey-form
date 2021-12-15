@@ -1,3 +1,39 @@
-body {
-    font-family: 'Poppins', sans-serif;
+:root {
+    --color-white: #f3f3f3;
+    --color-darkblue: #1b1b32;
+    --color-darkblue-alpha: rgba(27, 27, 50, 0.8);
+    --color-green: #37af65;
+    --font: 'Poppins', sans-serif;
+    --main-weight: 400;
+    --secondary-weight: 200;
+  }
+
+html {
+    padding: 0;
+    margin: 0;
+    margin: 0 auto;
+    color: var(--color-white);
 }
+
+body {
+    background-image:url(/src/img/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: var(--font);
+}
+
+body::before {
+    content: "";
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background:#51518C;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.7;
+}
+
