@@ -50,11 +50,15 @@ h1,h2 {
     align-content: center;
     justify-content: center;
     align-items: center;
+    width: 100%;
 }
+
+
 
 label {
     padding: 10px 0 2px 0; 
     width: 100%;
+    border-radius: 5px;
 }
 
 .form label:first-child {
@@ -65,6 +69,10 @@ label {
 input::placeholder {
     font-family: var(--font);
     padding-left: 1%;
+}
+
+.personal-data label {
+    margin-right: 5%;
 }
 
 .personal-data input,select { 
@@ -80,10 +88,9 @@ select option {
     padding-left: 1%;
 }
 
-
 .radio-option {
-   display: flex;
-   align-items: center;
+    display: flex;
+    align-items: center;
    flex-direction: row;
 }
 
@@ -92,16 +99,33 @@ select option {
     max-width: 20px;
 }
 
+.checkbox-section {
+    margin-top: 8px;
+    display: flex;
+    flex-flow: column nowrap;
+    padding-right: 280px;
+}
+
+textarea {
+    width: 100%;
+}
+
 /* ---------GULAG--------- */
 
-/* .personal-data input,select { 
+/* 
+
+select {
+    width: 105%;
+}
+
+.personal-data input,select { 
     width: 100%;
     border-radius: 5px;
     border: none;
     border: none;
     padding: 10px 13px;
 }
- */
+*/
 
 /* .form::before {
     content: "";
