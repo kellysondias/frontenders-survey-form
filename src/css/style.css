@@ -34,10 +34,11 @@ h1,h2 {
 
 .form {
     display: flex;
+    flex-flow: column wrap;
     justify-content: center;
     align-items: center;
     align-content: center;
-    position: relative;
+    margin-top: 5px;
     background-color: #2A2A49;
     padding: 40px;
     border-radius: 5px;
@@ -51,27 +52,56 @@ h1,h2 {
     align-items: center;
 }
 
-.form .personal-data label {
+label {
     padding: 10px 0 2px 0; 
     width: 100%;
 }
 
-.form .personal-data label:first-child {
+.form label:first-child {
     padding-top: 0;
     padding-bottom: 2%;
 }
 
-.form .personal-data input {
+input::placeholder {
+    font-family: var(--font);
+    padding-left: 1%;
+}
+
+.personal-data input,select { 
+    width: 100%;
     border-radius: 5px;
+    border: none;
     border: none;
     padding: 10px 13px;
 }
 
-.form .personal-data input::placeholder {
+select option {
     font-family: var(--font);
     padding-left: 1%;
-    
 }
+
+
+.radio-option {
+   display: flex;
+   align-items: center;
+   flex-direction: row;
+}
+
+.radio-option input {
+    width: 100%;
+    max-width: 20px;
+}
+
+/* ---------GULAG--------- */
+
+/* .personal-data input,select { 
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    border: none;
+    padding: 10px 13px;
+}
+ */
 
 /* .form::before {
     content: "";
