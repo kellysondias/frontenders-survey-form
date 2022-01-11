@@ -49,6 +49,10 @@
     width: 100%;
 }
 
+.form .personal-data span {
+    font-size: 15px;
+}
+
 label {
     padding: 10px 0 2px 0; 
     width: 100%;
