@@ -143,18 +143,22 @@ textarea::placeholder {
     padding: 1% 0 0 1.5%;
 }
 
+
 .button {
     margin-top: 40px;
     background-color: var(--color-green);
     color: var(--color-white);
     font-size: 15px;
     font-family: var(--font);
-    width: 100%;
     padding: 10px 0 10px 0;
     margin-bottom: 70px;
     cursor: pointer;
     border: 0;
     border-radius: 2px;
+}
+
+.button,a {
+    width: 100%;
 }
 
 select {
