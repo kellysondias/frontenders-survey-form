@@ -28,7 +28,7 @@ h1,h2 {
 }
 
 .survey .text h2 {
-    font-size: 125%;
+    font-size: 18px;
     font-style: italic;
     font-weight: var(--seconday-weight);
 }
@@ -39,7 +39,7 @@ h1,h2 {
     justify-content: center;
     align-items: center;
     align-content: center;
-    margin-top: 20px;
+    margin-top: 15px;
     background-color: var(--color-darkblue-alpha);
     padding: 30px 50px 0 50px;
     border-radius: 5px;
@@ -120,7 +120,11 @@ select option {
     margin-top: 8px;
     display: flex;
     flex-flow: column nowrap;
-    padding-right: 280px;
+    padding-right: 55%;
+}
+
+.checkbox-section label:last-child {
+    padding-bottom: 25px;
 }
 
 textarea {
